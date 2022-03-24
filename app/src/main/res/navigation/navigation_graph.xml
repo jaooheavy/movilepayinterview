@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.movilepayinterview.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/homeScreenTocardScreenFragment"
+            app:destination="@id/cardScreenFragment" />
+        <action
+            android:id="@+id/homeScreenTostatementScreenFragment"
+            app:destination="@id/statementScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardScreenFragment"
+        android:name="com.example.movilepayinterview.CardScreenFragment"
+        android:label="fragment_card_screen"
+        tools:layout="@layout/fragment_card_screen"/>
+    <fragment
+        android:id="@+id/statementScreenFragment"
+        android:name="com.example.movilepayinterview.CardScreenFragment"
+        android:label="fragment_card_screen"
+        tools:layout="@layout/fragment_card_screen"/>
+</navigation>
