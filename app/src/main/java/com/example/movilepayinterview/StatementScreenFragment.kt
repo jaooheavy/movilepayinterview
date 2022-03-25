@@ -14,10 +14,11 @@ import com.example.movilepayinterview.state.CardState
 import com.example.movilepayinterview.state.StatementState
 import com.example.movilepayinterview.viewmodel.StatementViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class StatementScreenFragment : Fragment() {
 
-    private val viewModel by sharedViewModel<StatementViewModel>()
+    private val viewModel by viewModel<StatementViewModel>()
 
     private var _binding: FragmentStatementScreenBinding? = null
     val binding get() = _binding!!

@@ -11,10 +11,11 @@ import com.example.movilepayinterview.databinding.FragmentCardScreenBinding
 import com.example.movilepayinterview.state.CardState
 import com.example.movilepayinterview.viewmodel.CardViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CardScreenFragment : Fragment() {
 
-    private val viewModel by sharedViewModel<CardViewModel>()
+    private val viewModel by viewModel<CardViewModel>()
 
     private var _binding: FragmentCardScreenBinding? = null
     val binding get() = _binding!!
