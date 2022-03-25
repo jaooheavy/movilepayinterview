@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeScreen"
         android:name="com.example.movilepayinterview.HomeScreenFragment"
-        android:label="fragment_home_screen"
+        android:label="Home Screen"
         tools:layout="@layout/fragment_home_screen" >
         <action
             android:id="@+id/homeScreenTocardScreenFragment"
@@ -20,11 +20,11 @@
     <fragment
         android:id="@+id/cardScreenFragment"
         android:name="com.example.movilepayinterview.CardScreenFragment"
-        android:label="fragment_card_screen"
+        android:label="Card Screen"
         tools:layout="@layout/fragment_card_screen"/>
     <fragment
         android:id="@+id/statementScreenFragment"
-        android:name="com.example.movilepayinterview.CardScreenFragment"
-        android:label="fragment_card_screen"
-        tools:layout="@layout/fragment_card_screen"/>
+        android:name="com.example.movilepayinterview.StatementScreenFragment"
+        android:label="Statement Screen"
+        tools:layout="@layout/fragment_statement_screen"/>
 </navigation>

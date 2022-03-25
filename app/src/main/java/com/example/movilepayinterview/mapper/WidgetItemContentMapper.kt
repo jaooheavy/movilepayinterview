@@ -11,6 +11,7 @@ class WidgetItemContentMapper(
     override fun toDomain(data: WidgetItemContentDto) = WidgetItemContent(
         title = data.title,
         button = buttonMapper.toDomain(data.button),
-        balance = balanceMapper.toDomain(data.balance)
+        balance = balanceMapper.toDomain(data.balance),
+        cardNumber = data.cardNumber
     )
 }
